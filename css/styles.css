@@ -4,7 +4,14 @@ VARIABLES
 
 :root {
   /* Modo oscuro (dk) */
-  --color-bg-dk: #222 /* Modo claro (lh). */;
+  --color-bg-dk: #222;
+  /* Modo claro (lh). */
+  --color-text-dk: #ddd;
+  /*Modo claro (ch) */
+  --color-bg-lh: #f5f5f5;
+  ---color-text-lh: #222;
+  /* Variables actuales */
+  --color-bg-current: var(--color-bg-dk);
 }
 
 /* 
@@ -22,8 +29,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-bg-current);
 }
 
 main {
   flex: 1;
+}
+
+header {
+  display: flex;
+  padding: 2.5rem;
 }
