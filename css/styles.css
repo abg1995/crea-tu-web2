@@ -1,33 +1,30 @@
-/* ========================
-VARIABLES
- ========================*/
-
+/* ===========================
+    VARIABLES
+   =========================== */
 :root {
   /* Modo oscuro (dk) */
-
-  --color-bg-dk: #222;
+  --color-bg-dk: #222222;
   --color-text-dk: #ddd;
   --color-accent-dk: #f3be38;
 
-  /* Modo claro (lh). */
-
+  /* Modo claro (lh) */
   --color-bg-lh: #f5f5f5;
-  ---color-text-lh: #222;
+  --color-text-lh: #222;
   --color-accent-lh: #a36201;
+
   /* Variables actuales */
   --color-bg-current: var(--color-bg-dk);
   --color-text-current: var(--color-text-dk);
   --color-accent-current: var(--color-accent-dk);
 }
 
-/* 
-========================
-    RESET Y BASE 
-========================    */
+/* ===========================
+    RESET Y BASE
+   =========================== */
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -36,7 +33,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--color-bg-current);
-  color: var(--color-bg-current);
+  color: var(--color-text-current);
 }
 
 main {
@@ -46,10 +43,11 @@ main {
 a {
   color: var(--color-text-current);
 }
-/* 
-========================
+
+/* ===========================
     HEADER
-========================    */
+   =========================== */
+
 header {
   display: flex;
   padding: 2.5rem;
@@ -91,10 +89,9 @@ header {
   height: 40px;
 }
 
-/* 
-========================
-    HERO 
-========================    */
+/* ===========================
+    HERO
+   =========================== */
 
 .hero {
   gap: 50px;
@@ -106,6 +103,7 @@ header {
   width: 60%;
   margin: 0 auto;
 }
+
 .hero-container-img img {
   width: 100%;
   height: 100%;
