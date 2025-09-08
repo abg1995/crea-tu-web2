@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crea tu web</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"
+      defer
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <script src="./js/scrollGSAP.js" defer></script>
   </head>
+
   <body>
     <header>
       <nav class="navbar">
-        <a href="#inicio">Inicio</a>
-        <a href="#disenio">Diseño</a>
-        <a href="#productos">Productos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#disenio" class="nav-link">Diseño</a>
+        <a href="#productos" class="nav-link">Productos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
 
       <button class="toggle-button" id="toggle-button">
@@ -25,51 +40,38 @@
     </header>
 
     <main>
-      <div class="hero section-base">
-        <h1>Personaliza tu proxima web</h1>
-        <div class="arrow">
-          <h2>↓</h2>
-        </div>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <div class="hero section-base" id="inicio">
+            <h1>Personaliza tu proxima web</h1>
+            <div class="arrow">
+              <h2 aria-label="Bajas a la siguiente seccion">↓</h2>
+            </div>
 
-        <div class="hero-container-img">
-          <img
-            src="./assets/images/hero.webp"
-            alt="Desarrollador creando una web"
-          />
+            <div class="hero-container-img">
+              <img
+                src="./assets/images/hero.webp"
+                alt="Desarrollador creando una web"
+              />
+            </div>
+          </div>
+
+          <div class="descripcion section-base">
+            <h2>Nuestra idea</h2>
+          </div>
+
+          <div class="proyectos section-base" id="disenio">
+            <h2>Conoce algunos de nuestros diseños</h2>
+          </div>
+
+          <div class="productos section-base" id="productos">
+            <h2>algunos de nuesztros prooductos</h2>
+          </div>
+
+          <div class="contacto section-base" id="contacto">
+            <h2>solicita tu web</h2>
+          </div>
         </div>
-        <img src="./assets/images/asesoria.webp" alt="imagen de nuestra web" />
-        <img
-          src="./assets/images/asesoria-alt.webp"
-          alt="imagen de nuestra web"
-        />
-        <img src="./assets/images/bodas.webp" alt="imagen de nuestra web" />
-        <img src="./assets/images/bodas-alt.webp" alt="imagen de nuestra web" />
-        <img src="./assets/images/ecommerce.webp" alt="imagen de nuestra web" />
-        <img
-          src="./assets/images/ecommerce-alt.webp"
-          alt="imagen de nuestra web"
-        />
-        <img
-          src="./assets/images/escuela-baile.webp"
-          alt="imagen de nuestra web"
-        />
-        <img
-          src="./assets/images/escuela-baile-alt.webp"
-          alt="imagen de nuestra web"
-        />
-        <img
-          src="./assets/images/restaurante.webp"
-          alt="imagen de nuestra web"
-        />
-        <img
-          src="./assets/images/restaurante-alt.webp"
-          alt="imagen de nuestra web"
-        />
-        <img src="./assets/images/tienda.webp" alt="imagen de nuestra web" />
-        <img
-          src="./assets/images/tienda-alt.webp"
-          alt="imagen de nuestra web"
-        />
       </div>
     </main>
 
