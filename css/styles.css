@@ -135,6 +135,26 @@ header {
   height: 100%;
 }
 
+/* PROYECTO 1 */
+
 .proyecto-1-img {
   background: url("../assets/images/ecommerce.webp") no-repeat top center/cover;
+}
+
+/* PROYECTO 2 */
+
+.proyecto-2-img {
+  background: url("../assets/images/bodas.webp");
+}
+
+/* PROYECTO 3 */
+
+.proyecto-3-img {
+  background: url("../assets/images/restaurante.webp");
+}
+
+/* PROYECTO 4 */
+
+.proyecto-4-img {
+  background: url("../assets/images/escuela-baile.webp");
 }
