@@ -30,6 +30,11 @@
   min-height: 100vh;
 }
 
+.section-m {
+  width: 600%;
+  margin: 0 auto;
+}
+
 /* ===========================
     RESET Y BASE
    =========================== */
@@ -130,10 +135,77 @@ header {
     CONETENDOR HORIZONTAl
    =========================== */
 
+.proyectos {
+  width: 500vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.proyecto-container {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto-contenido {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 60vh;
+  gap: 20px;
+}
+
+.proyecto-titulo {
+  color: var(--color-accent-current);
+  writing-mode: sideways-lr;
+  position: absolute;
+  left: -70px;
+  bottom: 0;
+  font-size: clamp(1.3rem, 5vw, 3rem);
+  font-weight: 300;
+}
+
 .proyecto-contenido-img {
   width: 100%;
   height: 100%;
+  transition: all 0.7s ease-in-out;
 }
+
+.proyecto-contenido-img:hover {
+  cursor: pointer;
+}
+
+.proyecto-contenido-info {
+  position: absolute;
+  bottom: -50px;
+  color: var(--color-text-current);
+}
+
+.proyecto-contenido-descripcion {
+  position: absolute;
+  bottom: -90px;
+  color: var(--color-text-current);
+  padding: 0 30px;
+  z-index: 10;
+  opacity: 0;
+  background-color: var(--color-bg-current);
+  transition: all 0.7s ease-in-out;
+}
+
+.proyecto-contenido-img:hover + .proyecto-contenido-descripcion {
+  opacity: 1;
+}
+/* 
+.proyecto-contenido-img:hover + .proyecto-contenido-info {
+  opacity: 0;
+} */
 
 /* PROYECTO 1 */
 
