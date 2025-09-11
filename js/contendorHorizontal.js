@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let contenedores = gsap.utils.toArray(".proyecto-container");
 
-let scrollHorizojntal = gsap.to(contenedores, {
+let scrollHorizontal = gsap.to(contenedores, {
   xPercent: -100 * (contenedores.length - 1),
   ease: "none",
 
@@ -13,4 +13,18 @@ let scrollHorizojntal = gsap.to(contenedores, {
     start: "top top",
     end: "+=3000",
   },
+});
+
+gsap.utils.toArray(".aparecer").forEach((element) => {
+  gsap.to(element, {
+    opacity: 1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: element,
+      containerAnimation: scrollHorizontal,
+      strat: "center 90%",
+      end: "center 60%",
+      scrub: true,
+    },
+  });
 });
