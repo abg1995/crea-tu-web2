@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Web básica",
+    "descripcion": "Una web simple y funcional, ideal para empresas o emprendedores que quieren presencia online sin complicaciones. Diseño limpio, navegación sencilla y adaptada a móviles, destacando tu marca y ofreciendo una experiencia clara para tus clientes.",
+    "imagenes": [
+      {
+        "normal": "assets/images/escuela-baile.webp",
+        "hover": "assets/images/escuela-baile-alt.webp"
+      },
+      {
+        "normal": "assets/images/tienda.webp",
+        "hover": "assets/images/tienda-alt.webp"
+      },
+      {
+        "normal": "assets/images/asesoria.webp",
+        "hover": "assets/images/asesoria-alt.webp"
+      }
+    ]
+  },
+  {
+    "titulo": "Web personalizada",
+    "descripcion": "Una web a medida, pensada para destacar tu negocio y captar la atención de tus clientes. Diseño exclusivo, funcionalidades avanzadas y experiencia de usuario optimizada, adaptándose a tu identidad de marca y a las necesidades específicas de tu proyecto.",
+    "imagenes": [
+      {
+        "normal": "assets/images/restaurante.webp",
+        "hover": "assets/images/restaurante-alt.webp"
+      },
+      {
+        "normal": "assets/images/ecommerce.webp",
+        "hover": "assets/images/ecommerce-alt.webp"
+      },
+      {
+        "normal": "assets/images/bodas.webp",
+        "hover": "assets/images/bodas-alt.webp"
+      }
+    ]
+  }
+]

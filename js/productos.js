@@ -3,7 +3,7 @@ fetch("data/productos.json")
   .then((data) => {
     const contenedor = document.getElementById("contenedor-productos");
 
-    data.array.forEach((producto, index) => {
+    data.forEach((producto, index) => {
       const productoDiv = document.createElement("div");
       productoDiv.classList.add("producto-container", `producto-${index + 1}`);
 
