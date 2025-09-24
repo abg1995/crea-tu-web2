@@ -16,7 +16,7 @@ fetch("data/productos.json")
             <p class="producto-contenido-descripcion">
             ${producto.descripcion}
             </p>
-            <a href="#contacto">
+            <a href="#contacto" class="btn-contacto">
                 <button class="boton">Solicitar presupuestos </buton>
                 </a>
             
