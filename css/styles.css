@@ -63,6 +63,10 @@
   margin: 0 auto;
 }
 
+.spacer {
+  height: 50vh;
+}
+
 /* ===========================
     RESET Y BASE
    =========================== */
@@ -95,10 +99,12 @@ h1 {
 
 h2 {
   font-size: clamp(1.3rem, 4vw, 3rem);
+  text-align: center;
 }
 
 h3 {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
+  text-align: center;
 }
 
 a {
@@ -425,4 +431,63 @@ header {
 }
 .item:hover .normal {
   opacity: 0;
+}
+
+/* ===========================
+        FORMULARIO
+=========================== */
+
+.formulario-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 150px;
+  height: 150vh;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.formulario label {
+  color: var(--color-text-current);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-text-current);
+  padding: 8px 0;
+  color: var(--color-text-current);
+  transition: all 0.3s ease-in-out;
+  resize: none;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: var(--color-text-current);
+  opacity: 0.6;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-bottom-color: var(--color-accent-current);
+}
+
+.formularioc select {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.formulario option {
+  background-color: var(--color-bg-current);
+  color: var(--color-text-current);
 }
