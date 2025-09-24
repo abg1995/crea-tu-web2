@@ -14,7 +14,8 @@
    =========================== */
 :root {
   --font-family: "Merriweather", serif;
-  --font-family-secondary: ;
+  --font-family-secondary: "Unbounded", sans-serif;
+
   /* Modo oscuro (dk) */
   --color-bg-dk: #222222;
   --color-text-dk: #ddd;
@@ -88,7 +89,7 @@ main {
 }
 
 h1 {
-  font-size: clamp(2.5re, 6vw, 10rem);
+  font-size: clamp(2.5rem, 6vw, 10rem);
   text-align: center;
 }
 
@@ -117,7 +118,7 @@ header {
   z-index: 100;
   width: 100%;
   background-color: var(--color-bg-current);
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-accent-dk);
 }
 
 .navbar {
@@ -394,7 +395,7 @@ header {
 
 .producto-contenido-img {
   display: flex;
-  gap: 20;
+  gap: 20px;
   width: 100%;
   height: 100%;
 }
