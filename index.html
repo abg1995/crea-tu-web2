@@ -87,6 +87,8 @@
             </div>
           </div>
 
+          <div class="spacer"></div>
+
           <div class="proyectos section-base" id="disenio">
             <div class="proyecto-container">
               <h2>Conoce algunos de nuestros diseños</h2>
@@ -170,8 +172,53 @@
             <div id="contenedor-productos" class="contenedor-productos"></div>
           </div>
 
-          <div class="contacto section-base" id="contacto">
-            <h2>solicita tu web</h2>
+          <div class="spacer"></div>
+
+          <div class="contacto section-base section-m" id="contacto">
+            <div class="formulario-container">
+              <h2>Solicita tu web</h2>
+
+              <form id="formulario-web" class="formulario">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+                <label for="correo">Correo</label>
+                <input
+                  type="email"
+                  id="correo"
+                  name="correo"
+                  placeholder="tu@email.com"
+                  required
+                />
+                <label for="Telefono">Telefono</label>
+                <input
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="123 456 789"
+                  required
+                />
+                <label for="tipoweb"> Tipo de web</label>
+                <select name="tipo-web" id="tipo-web" required>
+                  <option value="basica">Web basica</option>
+                  <option value="personalizada">Web personalizada</option>
+                </select>
+                <label for="descripcion">descripcion</label>
+                <textarea
+                  name="descripcion"
+                  id="descripcion"
+                  placehold
+                  er="cuentanos tu proyecto"
+                  rows="5"
+                ></textarea>
+                <button type="submit" class="boton">Enviar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
