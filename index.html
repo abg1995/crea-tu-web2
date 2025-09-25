@@ -178,7 +178,17 @@
             <div class="formulario-container">
               <h2>Solicita tu web</h2>
 
-              <form id="formulario-web" class="formulario">
+              <form
+                id="formulario-web"
+                class="formulario"
+                method="POST"
+                name="webForm"
+                netlify
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <!-- CAMPO OCULTO -->
+                <input type="hidden" name="form-name" value="webForm" />
+
                 <label for="nombre">Nombre</label>
                 <input
                   type="text"
