@@ -517,6 +517,7 @@ header {
     font-family: var(--font-family);
     line-height: 1;
     font-weight: 300;
+    overflow-x: hidden;
   }
   .label-check {
     display: block;
@@ -551,13 +552,5 @@ header {
   .productos {
     display: flex;
     gap: 50px;
-  }
-
-  .proyectos {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
   }
 }
