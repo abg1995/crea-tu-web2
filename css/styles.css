@@ -547,4 +547,17 @@ header {
   .check-menu:checked + .nav-links {
     display: flex;
   }
+
+  .productos {
+    display: flex;
+    gap: 50px;
+  }
+
+  .proyectos {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
