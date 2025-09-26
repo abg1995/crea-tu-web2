@@ -553,4 +553,20 @@ header {
     display: flex;
     gap: 50px;
   }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh; /* Reduce el margen superior */
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+  }
+
+  .hero-container-img {
+    width: 90%; /* Reduce el ancho para dejar márgenes */
+  }
+
+  .producto-contenido {
+    width: 90vw;
+    height: auto;
+  }
 }
