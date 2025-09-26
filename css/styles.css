@@ -508,6 +508,16 @@ header {
 }
 
 @media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    background-color: var(--color-bg-current);
+    color: var(--color-text-current);
+    font-family: var(--font-family);
+    line-height: 1;
+    font-weight: 300;
+  }
   .label-check {
     display: block;
   }
