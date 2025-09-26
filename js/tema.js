@@ -34,9 +34,7 @@ botonTema.addEventListener("click", () => {
     getComputedStyle(root).getPropertyValue(`--color-bg-lh`).trim()
   ) {
     icono.src = "assets/icons/luna.svg";
-    icono.src = "assets/icons/menu-svgrepo-com-black.svg";
   } else {
     icono.src = "assets/icons/sol.svg";
-    icono.src = "assets/icons/menu-svgrepo-com.svg";
   }
 });
