@@ -1,5 +1,7 @@
 const botonTema = document.getElementById("toggle-button");
+const botonHamburguesa = document.getElementById("menu-anvorguesa");
 const icono = botonTema.querySelector("img");
+const hamburguesa = botonHamburguesa.querySelector("img");
 
 botonTema.addEventListener("click", () => {
   const root = document.documentElement;
@@ -36,5 +38,18 @@ botonTema.addEventListener("click", () => {
     icono.src = "assets/icons/luna.svg";
   } else {
     icono.src = "assets/icons/sol.svg";
+  }
+
+  //cambiar menu hamburguesa con tema
+
+  const hambMenu = getComputedStyle(root)
+    .getPropertyValue(`--color-bg-current`)
+    .trim();
+  if (
+    hambMenu === getComputedStyle(root).getPropertyValue(`--color-bg-lh`).trim()
+  ) {
+    hamburguesa.src = "assets/icons/menu-svgrepo-com-black.svg";
+  } else {
+    hamburguesa.src = "assets/icons/menu-svgrepo-com.svg";
   }
 });
