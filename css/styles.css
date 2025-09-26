@@ -129,6 +129,7 @@ header {
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -155,6 +156,20 @@ header {
 .icono {
   width: 40px;
   height: 40px;
+}
+
+.check-menu {
+  display: none;
+}
+.label-check {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  font-family: var(--font-family);
 }
 
 /* ===========================
@@ -490,4 +505,35 @@ header {
 .formulario option {
   background-color: var(--color-bg-current);
   color: var(--color-text-current);
+}
+
+@media (max-width: 768px) {
+  .label-check {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 100%;
+    background-color: #fdba3f;
+  }
+
+  .nav-links li a {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+  }
+
+  .nav-links li a:hover {
+    background-color: var(--background-light);
+  }
+
+  .check-menu:checked + .nav-links {
+    display: flex;
+  }
 }
